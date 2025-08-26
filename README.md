@@ -8,9 +8,9 @@ xremap_gui provides an intuitive GUI to create, save, load, and delete profiles 
 ## Screenshots
 ![Main Interface](images/main-interface.png)
 
-##Prerequisites
+## Prerequisites
 
-###Software Dependencies
+### Software Dependencies
 
 Python 3: Required to run the script.
 bash
