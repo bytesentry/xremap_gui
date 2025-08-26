@@ -1,6 +1,12 @@
 xremap GUI
 A graphical user interface for configuring and managing key and mouse remappings using xremap on Linux systems.
 
+## Overview
+xremap_gui provides an intuitive GUI to create, save, load, and delete profiles with custom keybindings, select input devices, and apply remappings for specific applications.
+
+## Screenshots
+![Main Interface](images/main-interface.png)
+
 Prerequisites
 
 Software Dependencies
