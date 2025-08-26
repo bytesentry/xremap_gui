@@ -1,4 +1,5 @@
 xremap GUI
+
 A graphical user interface for configuring and managing key and mouse remappings using xremap on Linux systems.
 
 Prerequisites
