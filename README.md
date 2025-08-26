@@ -12,52 +12,88 @@ xremap_gui provides an intuitive GUI to create, save, load, and delete profiles 
 
 ### Software Dependencies
 
-Python 3: Required to run the script.
-bash
-python3 --version
+- **Python 3**: Required to run the script.  
 
-Tkinter: Python's standard GUI library (usually included with Python).
-bash
-python3 -c "import tkinter"
+  ```bash
+  python3 --version
+  ```
 
-PyYAML: For handling YAML configuration files.
-bash
-pip3 install pyyaml
+- **Tkinter**: Python's standard GUI library (usually included with Python).  
 
-xremap: The key remapping tool.
-bash
-xremap --version
-Install: xremap GitHub
+  ```bash
+  python3 -c "import tkinter"
+  ```
 
-wmctrl: For listing open windows to populate app-specific WM_CLASS values.
-bash
-wmctrl --version
-Install: sudo apt install wmctrl (Ubuntu/Debian) or equivalent.
+- **PyYAML**: For handling YAML configuration files.  
 
-xprop: For querying window properties (WM_CLASS) for app-specific remappings.
-bash
-xprop --version
-Install: sudo apt install x11-utils (Ubuntu/Debian) or equivalent.
+  ```bash
+  pip3 install pyyaml
+  ```
 
-libinput: For listing input devices.
-bash
-libinput list-devices
-Install: sudo apt install libinput-tools (Ubuntu/Debian) or equivalent.
+- **xremap**: The key remapping tool.  
 
-System Requirements
+  ```bash
+  xremap --version
+  ```
+  Install: [xremap GitHub](https://github.com/k0kubun/xremap)
 
-Linux with X11: Required for wmctrl and xprop to list and query window properties.
-User Permissions: User must be in the input group to access input devices without sudo.
-bash
-groups | grep input
-Add user: sudo usermod -aG input $USER and log out/in.
-Write Permissions: Ensure write access to /home/$USER/.config/xremap_gui/ for profiles and configurations.
+- **wmctrl**: For listing open windows to populate app-specific WM_CLASS values.  
 
-Installation
+  ```bash
+  wmctrl --version
+  ```
+  Install:  
+  ```bash
+  sudo apt install wmctrl   # Ubuntu/Debian
+  ```
 
-bash
+- **xprop**: For querying window properties (WM_CLASS) for app-specific remappings.  
+
+  ```bash
+  xprop --version
+  ```
+  Install:  
+  ```bash
+  sudo apt install x11-utils   # Ubuntu/Debian
+  ```
+
+- **libinput**: For listing input devices.  
+
+  ```bash
+  libinput list-devices
+  ```
+  Install:  
+  ```bash
+  sudo apt install libinput-tools   # Ubuntu/Debian
+  ```
+
+## System Requirements
+- **Linux with X11**: Required for wmctrl and xprop to list and query window properties.  
+- **User Permissions**: User must be in the `input` group to access input devices without sudo.  
+
+  ```bash
+  groups | grep input
+  ```
+
+  Add user to group:  
+
+  ```bash
+  sudo usermod -aG input $USER
+  ```
+
+  Then log out and log back in.  
+
+- **Write Permissions**: Ensure write access to  
+  ```
+  /home/$USER/.config/xremap_gui/
+  ```  
+  for profiles and configurations.
+
+## Installation
+```bash
 pip install -r requirements.txt
 python src/xremap_gui/remap.py
+```
 
-Usage
+## Usage
 Run the GUI to create, save, load, and delete profiles with custom keybindings, select input devices, and apply remappings for specific applications.
