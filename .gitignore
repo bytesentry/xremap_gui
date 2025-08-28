@@ -3,3 +3,4 @@ __pycache__/
 *.flatpak
 build-dir/
 xremap_gui-repo/
+.flatpak-builder/
